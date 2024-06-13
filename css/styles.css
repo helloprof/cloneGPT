@@ -1,3 +1,42 @@
 h1 {
     color: lightgreen;
 }
+/* 
+.example-card {
+
+} */
+
+.nav-link {
+    color: white;
+    background-color: black;
+    border-radius: 5px;
+
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: lightgreen;
+}
+
+a:visited {
+    color:white;
+}
+
+/* #id {
+
+}
+
+.class {
+
+}
+
+element {
+
+} */
+
+#title {
+    color: lightgreen;
+}
