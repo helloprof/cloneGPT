@@ -27,6 +27,7 @@ function generateTopics(topics) {
 
         let topicIcon = document.createElement('i')
         topicIcon.className = topic.icon
+        topicCard.className = "topic-card"
 
         topicCard.appendChild(hr)
         topicCard.appendChild(topicIcon)
