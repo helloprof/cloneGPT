@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-    <nav class="nav-link">
-        <button class="nav-link"><a href="/"><i class="fa-solid fa-pen-to-square"></i></a></button>
-        <button class="nav-link"><a id="title" href="/">CloneGPT</a></button>
-        <button class="nav-link"><a href="/user"><i class="fa-solid fa-circle-user"></i></a></button>
-        <button class="nav-link"><a href="/about"><i class="fa-solid fa-circle-info"></i></a></button>
+    <nav class="nav-bar">
+        <a class="nav-link" href="/"><i class="fa-solid fa-pen-to-square"></i></a>
+        <a class="nav-link" id="title" href="/">CloneGPT<i class="topic-icon fa-solid fa-robot"></i></a>
+        <a class="nav-link" href="/user"><i class="fa-solid fa-circle-user"></i></a>
+        <!-- <a class="nav-link" href="/about"><i class="fa-solid fa-circle-info"></i></a> -->
     </nav>
     <!-- <div style="background-color: #181818;">CHAT STUFF HERE</div>
     <div class="example-card" style="border-style:solid; border-color:white; border-width: 1px; width: 25%; text-align: center;" >BOX HERE</div>
@@ -21,17 +21,30 @@
     <button id="generate">GENERATE</button> -->
 
     <!-- import scripts -->
-    <div id="topics">
+    <div class="main">
+        <div class="sidebar">
+            <h3 style="text-align: center;">Today</h1>
+        </div>
+        <div class="GPT">
+            <div id="topics">
+
+            </div>
+            <!-- <form>
+                <input type="text" placeholder="enter text">
+            </form> -->
+        
+            <div id="chats">
+        
+            </div>
+
+        </div>
 
     </div>
-    <hr>
-    <hr>
 
-    <div id="chats">
-
-    </div>
     <script src="/js/chats.js"></script>
     <script src="/js/topics.js"></script>
+    <script src="/js/priorChats.js"></script>
+
     <script src="/js/script.js"></script>
 
 </body>
