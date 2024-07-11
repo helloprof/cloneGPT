@@ -1,9 +1,9 @@
 // All of our data is available on the global `window` object.
 // Create local variables to work with it in this file.
-const { topics, chats } = window;
+const { topics, chats, priorChats } = window;
 
 // For debugging, display all of our data in the console. You can remove this later.
-console.log({ topics, chats }, "App Data");
+console.log({ topics, chats, priorChats }, "App Data");
 
 
 function generateTopics(topics) {
@@ -29,11 +29,11 @@ function generateTopics(topics) {
         topicIcon.className = topic.icon
         topicCard.className = "topic-card"
 
-        topicCard.appendChild(hr)
+        // topicCard.appendChild(hr)
         topicCard.appendChild(topicIcon)
         topicCard.appendChild(topicName)
         topicCard.appendChild(topicDescription)
-        topicCard.appendChild(hr2)
+        // topicCard.appendChild(hr2)
 
         topicCard.addEventListener('click', () => {
             console.log("you clicked it")
@@ -77,6 +77,23 @@ function generateChats(TID) {
 
 }
 
+function generatePriorChats(priorChats) {
+    let sidebar = document.querySelector(".sidebar")
+    // let button = 
+
+    // sidebar.innerHTML = ""
+
+    priorChats.forEach((priorChat) => {
+        let button = document.createElement('a')
+        button.textContent = priorChat.details
+        button.className = "priorChatButton"
+
+        sidebar.appendChild(button)
+    })
+
+}
+
 window.addEventListener('load', (e) => {
     generateTopics(topics)
+    generatePriorChats(priorChats)
 })
