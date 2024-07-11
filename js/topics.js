@@ -9,19 +9,19 @@ window.topics = [
         topicID: "TID-1",
         name: "Biology",
         description: "What's a protein?",
-        icon: "fa-solid fa-dna"
+        icon: "fa-solid fa-dna topic-icon"
     },
     {
         topicID: "TID-2",
         name: "Machine Learning",
         description: "What is a neural network?",
-        icon: "fa-solid fa-brain"
+        icon: "fa-solid fa-brain topic-icon"
     },
     {
         topicID: "TID-3",
         name: "Travel",
         description: "Make an itinerary for Japan in May",
-        icon: "fa-solid fa-plane"
+        icon: "fa-solid fa-plane topic-icon"
     },
 
 ];
